@@ -97,13 +97,13 @@ def prepare_QuantitySkew_client_data(X_train, y_train, num_clients):
 
 
 def prepare_client_data(X_train, y_train, distribution_type, num_classes, num_clients):
-    if distribution_type == 'LabelSkew_c1':
+    if distribution_type == 'c1':
         return prepare_C1_client_data(X_train, y_train, num_classes)
-    elif distribution_type == 'LabelSkew_c2':
+    elif distribution_type == 'c2':
         return prepare_C2_client_data(X_train, y_train, num_classes)
-    elif distribution_type == 'IID':
+    elif distribution_type == 'iid':
         return prepare_IID_client_data(X_train, y_train, num_clients)
-    elif distribution_type == 'QuantitySkew':
+    elif distribution_type == 'quantity':
         return prepare_QuantitySkew_client_data(X_train, y_train, num_clients)
     else:
         raise ValueError(f"Invalid distribution type: {distribution_type}")
