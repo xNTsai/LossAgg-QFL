@@ -65,7 +65,7 @@ Training methods are implemented in `training.py` and leverage a variational qua
 - **Centralized** training using the full dataset.
 - **FedAvg**: Federated averaging of locally trained models.
 - **FedAdam**: Federated optimization using Adam-style updates.
-- **Loss Aggregation (SPSA-based)**: Aggregating SPSA updates from clients.
+- **Loss Aggregation (SPSA-based)**: Aggregating losses from clients to server for SPSA optimization.
 - **Loss Aggregation with Adam**: Combines loss aggregation with Adam updates.
 
 ## Experiment Configuration
